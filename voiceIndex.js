@@ -45,3 +45,15 @@ var myText = document.getElementById('myText');
 			};
 
 speak();
+
+function stop(){
+speechSynthesis.cancel();
+}
+
+function pause(){
+speechSynthesis.pause();
+}
+
+function resume(){
+speechSynthesis.resume();
+}

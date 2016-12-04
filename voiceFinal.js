@@ -1,4 +1,7 @@
-string = "Once in the well, Apoopan struggled in the water, and could not get out of the well. Understanding dawned on him and he said Now I know why you were crying.  You could not get out of this well. I am sorry. I will cry with you too. Apoopan then  made a big hue and cry. ";
+string1 =  "Once in the well, Apoopan struggled in the water, and could not get out of the well.";
+string2= " Understanding dawned on him and he said Now I know why you were crying.";
+string3= "You could not get out of this well. I am sorry. "
+string4 ="I will cry with you too. Apoopan then  made a big hue and cry. ";
 	
 	
 
@@ -34,14 +37,49 @@ var myText = document.getElementById('myText');
 				loadVoices();
 			};
 
-			function speak () {
-				var msg = new SpeechSynthesisUtterance();
-				msg.volume = volumeSlider.value;
+		
+function initializeMsg(msg){
+  msg.volume = volumeSlider.value;
 				msg.voice = voiceMap[voiceOptions.value];
                 msg.rate = rateSlider.value;
 				msg.Pitch = pitchSlider.value;
-				msg.text = string;
-				window.speechSynthesis.speak(msg);
+}
+
+			
+function speak(){
+  var msg1 = new SpeechSynthesisUtterance();
+  initializeMsg(msg1);
+				msg1.text = string1;
+				window.speechSynthesis.speak(msg1);
+                var msg2 = new SpeechSynthesisUtterance();
+                initializeMsg(msg2);
+                msg2.text = string2;
+                window.speechSynthesis.speak(msg2);
+
+                var msg3 = new SpeechSynthesisUtterance();
+                initializeMsg(msg3);
+                msg3.text = string3;
+                window.speechSynthesis.speak(msg3);
+     
+                var msg4 = new SpeechSynthesisUtterance();
+                initializeMsg(msg4);           
+                msg4.text = string4;
+                window.speechSynthesis.speak(msg4);
+
+                
+                
 			};
 
 speak();
+
+function stop(){
+speechSynthesis.cancel();
+}
+
+function pause(){
+speechSynthesis.pause();
+}
+
+function resume(){
+speechSynthesis.resume();
+}
