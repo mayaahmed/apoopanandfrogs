@@ -1,18 +1,18 @@
 
-
-input[type=button] {
+.submitButton{
 background-color: #D2B48C;   
-width: 40px;
+width: 50px;
 height: 40px;
 font-size: 24px;
-color: beige;
+// color: beige;
 border-radius: 5px;
 box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 opacity: 0.7;
 margin-left: 10px;
+font-size: 10px;
 }
 
-input[type=button]:hover{
+.submitButton:hover{
 opacity:1;
 }
 
@@ -27,5 +27,14 @@ font-size: 22px;
 }
 
 #homeButton{
+background-color: #D2B48C;   
+width: 40px;
+height: 40px;
+font-size: 24px;
+color: beige;
+border-radius: 5px;
+box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+opacity: 0.7;
+margin-left: 10px;
 font-size: 10px;
 }
