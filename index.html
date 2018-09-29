@@ -1,94 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <!--  Programmer : Maya Ahmed 
-	Files: chapterq.html;
-	Date: "Nov 17 2016" -->
+<!--  Programmer : Maya Ahmed 
+            Date: "Nov 17 2016" -->
 
-  <head>
-    <meta charset="utf-8" />
-    <title>Punjiri: Web and Mobile Technologies.</title>
+	<head>
+		<meta charset="utf-8" />
+		<title>Punjiri: Web and Mobile Technologies.</title>
+        
+		<link rel="stylesheet" type="text/css" href="pages.css">
+		<link rel="stylesheet" type="text/css" href="voice.css">
+	</head>
+
+<body>
+  
+  <nav id="navId" class="nav-side" >
+    <div id="tableOfContentsDiv">  </div>
+    <a href="#"  class="nav-toggle" id="toggleButton"  onclick="toggle()"></a>
+  </nav>
+
+
+<div class="chapter"> 
+  <h3> Chapter 1  </h3>
+
+  <div id="storyDiv">
+    <h2> Apoopan goes to school. </h2>
+
+    <p> One fine morning Apoopan watched children going to school and sighed. </p>
+
+    <p> "Look at everyone around us" said Apoopan. "They are all
+      prospering.  Their children went to school. As grown ups they get jobs
+      to bring home good salaries. I am also going to go to school. I will
+      get an education and then I will get a job. We will get rich too." </p>
     
-    
-    
-    <link rel="stylesheet" type="text/css" href="story.css">
-    <link rel="stylesheet" type="text/css" href="voice.css">
+    <p> "It is a great idea" said Amooma. </p>
 
-  </head>
+    <p> The next day Apoopan went to school really early and sat in the first
+      bench in the Kindergarten class. When the class teacher arrived he was
+      surprised to see an old man sitting in the class. </p>
 
-  <body>
-    
+    <p> "Who are you?" asked the class teacher. </p>
+
+    <p> Apoopan thought that the teacher was teaching him sentences and he
+      repeated </p>
+
+    <p> "Who are you?" </p>
+
+    <p> The teacher got a little annoyed because he thought that Apoopan was
+      teasing him.  </p>
+
+    <p> "Go away" said the class teacher. </p>
+
+    <p> Apoopan repeated "Go away." </p>
+
+    <p> The teacher was an ill tempered man. He got very angry and shouted </p>
+
+    <p> "I will hit you with a stick." </p>
+
+    <p> Apoopan repeated "I will hit you with a stick." </p>
+
+    <p> But before anything further could happen the school bell rang for
+      prayers. Apoopan thought that the school was dismissed for the day
+      and he headed back home. </p>
+
+    <p> Apoopan decided to be a really good student. He wanted to learn
+      the first lesson very well. He kept repeating all day </p>
+ 
+    <p> "Who are you? Go away. I will hit you with a stick." </p>
+
+    <p> Apoopan said these sentences over and over again till he went to bed. </p>
+
+    <p>  That night a thief after plundering the neighborhood was wondering
+      whether to make a last stop at Apoopan's house. He paused outside
+      Apoopan's house, hesitating, because his hands were full of loot.  He
+      was shocked when he heard Apoopan suddenly asking </p>
+
+    <p> "Who are you?" </p>
+
+    <p> Apoopan had woken up in the middle of the night to make sure he remembered
+      his lesson well. </p>
+
+    <p> "Go away" said Apoopan remembering the next sentence. </p>
+
+    <p> Then Apoopan forgot what the third line was.  </p>
+
+    <p> The thief was frightened and he was slowly going to run away when
+      Apoopan in his joy of remembering the third sentence shouted loudly
+
+    <p> "I will hit you with a stick." </p>
+
+    <p> This scared the thief big time. He dropped his loot and ran away with
+      all his might. When Apoopan got up in the morning he found a small
+      treasure outside his house. Apoopan turned over the stolen wealth
+      to the police, and  they gave him a big reward. The reward was enough to
+      take care of the expenses of the old couple for a long time. </p>
+
+    <p> "I made enough money. I do not need to go to school anymore" said Apoopan. </p>
+
+    <p> "Even one day of education brought us prosperity" concluded Amooma. </p>
+
+  </div>  <!- storyDiv -->
+
+	     
+
+	      <div class="speechContainer">
+
+ <div id="buttonsDiv">
+		<input class="button" type="button"  value="&#8592;"  onClick="location.href='forward.html'"> 
+		<input class="button"  type="button"  value="&#8594;"  onClick="location.href='amoo2.html '"> 
+	      </div>
 
 
-    <style>
-      .movieSection{
-      margin: 50px  auto;
-      background-image: url(oldman.jpg);
-      width: 110px;
-      height: 220px;
-
-      animation: frog-bounce 1s steps(4) infinite;
-      }
-      @keyframes frog-bounce {
-      from { background-position: 0px; }
-      to { background-position: -450px; }
-      }
-
-    </style>
-
-    <div class="main">
-      <div id="myText"> One day Apoopan was going home late in the night completely drunk up to his ears.  </div>
-      <div class="movieSection"> </div>
-    </div>
-
-
-
-
-
-    <div class="speechContainer">
-      <p>	<div class="button" onclick="speak();">Speak</div> <div class="button" onclick="stop();">Stop</div>
-	<div class="button" onclick="pause();">Pause</div><div class="button" onclick="resume();">Resume</div>
-	<div class="button" onclick="location.href='frog.html'">Next Page</div> </p>	
-      <p>	<label>
-	  <span>Voice</span>
-	  <select id="voiceOptions"></select>
-      </label> </p>
-      <p> 	<label>
-	  <span>Volume</span>
-	  <input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0.1" />
-	</label>
-	<label>
-	  <span>rate</span>
-	  <input type="range" id="rateSlider" min="0" max="1" value="0.5" step="0.1" />
-	</label>
-	<label>
-	  <span>Pitch</span>
-	  <input type="range" id="pitchSlider" min="0" max="2" value="0.5" step="0.1" />
-      </label> </p>
-      
-    </div>
-
-    
-
-    <script>
-
-if (navigator.userAgent.indexOf("Chrome") !== -1){
- alert("chrome");
-} 
-else { alert('not chrome'); }
+		<p>	
+		  <div class="button" onclick="speak();">Speak</div> 
+		  <div class="button" onclick="pause();">Pause</div>
+		  <div class="button" onclick="resume();">Resume</div>
+		  <div class="button" onclick="stop();">Stop</div>
+	
+		<p>	<label>
+		    <span>Voice</span>
+		    <select id="voiceOptions"></select>
+		</label> </p>
+		<p> 	<label>
+		    <span>Volume</span>
+		    <input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0.1" />
+		  </label>
+		  <label>
+		    <span>rate</span>
+		    <input type="range" id="rateSlider" min="0" max="1" value="0.5" step="0.1" />
+		  </label>
+		  <label>
+		    <span>Pitch</span>
+		    <input type="range" id="pitchSlider" min="0" max="2" value="0.5" step="0.1" />
+		</label> </p>
+	      </div>
 
 
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-85159230-1', 'auto');
-      ga('send', 'pageview');
 
-    </script>
+</div>
 
-    <script src="voiceIndex.js"></script> 
-
-  </body>
+<script src="pages.js"></script> 
+<script src="tableOfContents.js"></script> 
+<script src="voice.js"></script> 
+ </body>
 </html>
+
+
+
+
+
+
+

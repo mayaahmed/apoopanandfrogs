@@ -1,0 +1,97 @@
+body{
+    background: beige;
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+.chapter{
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+    background: beige;
+    font-size: 24px;
+    padding: 50px;
+    width: 90%;
+}
+
+
+.nav-side{
+    position: fixed;
+    z-index: 1;
+    left: -255px; 
+    top: 0; 
+    width: 100%;
+    height: 700px;
+    max-width: 250px;
+    background: black;
+    //background: rgba(0,0,0,0.2);
+    //background:#D2B48C;
+    box-sizing: border-box;
+    padding: 20px;
+    color: beige;
+    opacity: 0.9;
+    transition: left 1s linear 0s;
+}
+
+.nav-toggle{
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom-right-radius: 3px;
+    opacity: 0.8;
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    background: #f6f6f6;
+    color: #000;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+.nav-toggle:hover{
+    
+ box-shadow: 4px 4px 10px 0 #ccc;
+}
+
+#tableOfContentsDiv{
+    border: 1px dotted beige;
+    padding: 5px;
+    height: 400px;
+    font-size: 12px;
+    overflow: scroll;
+}
+
+.tocLinks{
+    position: relative;
+    text-decoration: none;
+    color: beige;
+}
+
+.tocLinks:hover{
+font-size: 13px;
+}
+
+.tocLinks2{
+    position: relative;
+    transition: left 1s linear 0s;
+    text-decoration: none;
+}
+
+.tocLinks2:hover{
+    left: 35px;
+}
+
+
+#buttonsDiv{
+    //position: fixed;
+text-align: right;
+padding: 20px;
+}
+
