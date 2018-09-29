@@ -55,6 +55,7 @@ function initializeMsg(msg){
 
 			
 function speak(){
+                
                 var msg1 = new SpeechSynthesisUtterance();
                 initializeMsg(msg1);
 				msg1.text = string1;
